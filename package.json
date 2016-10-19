@@ -1,0 +1,29 @@
+{
+  "name": "bash-ls",
+  "version": "0.9.1",
+  "description": "bash command `ls` in pure javascript",
+  "main": "index.js",
+  "bin": {
+    "ls": "bin.js"
+  },
+  "keywords": [
+    "bash",
+    "ls"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vunb/bash-ls.git"
+  },
+  "devDependencies": {
+    "tape": "*"
+  },
+  "dependencies": {
+    "component-type": "*",
+    "harmony-required": "*",
+    "minimist": "*",
+    "async": "*"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  }
+}
