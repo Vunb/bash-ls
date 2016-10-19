@@ -11,7 +11,7 @@ $ npm instal -g bash-ls
 ### API
 
 ```js
-var ls = require('ls');
+var ls = require('bash-ls');
 ls('./', function(er, list) {
   // here you could get a files list of the current directory
 })
