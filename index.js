@@ -9,18 +9,18 @@ function ls(files, option, callback) {
   if (!files) return dir(__dirname, option, callback);
 
   if (type(files) == 'string')
-    return dir(path.resolve(files), option, callback);
+    return dir(files, option, callback);
   else {
     async.each(files, function(base, done) {
-      dir(path.resolve(base), option,
+      dir(base, option,
           function(er, list) { done(er, {dir: base, list: list}) });
     }, callback);
   };
 }
 
 function dir(dir, option, callback) {
-  // var rootDir = process.cwd();
-  // var pathDir = path.join(rootDir, dir);
+  var rootDir = process.cwd();
+  var pathDir = path.resolve(rootDir, dir || "");
   // console.log("DIRRRRRRRR: ", dir);
   fs.readdir(dir, function(err, list) {
     if (!err) {
