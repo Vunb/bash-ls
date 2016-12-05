@@ -5,7 +5,7 @@ bash command `ls` in pure javascript
 ### Installation
 
 ```bash
-$ npm instal -g bash-ls
+$ npm install -g bash-ls
 ```
 
 ### API
