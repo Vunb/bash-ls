@@ -3,9 +3,11 @@ var type = require('component-type');
 var ls = require('../');
 
 test('ls --all', function(t) {
-  t.plan(2);
-  ls('./', '--all', function(er, list) {
+  t.plan(3);
+  ls('./', '--all', function(err, list) {
+    t.equal(!err, true, "must have no error");
     t.equal(type(list) === 'array', true);
-    t.equal(list.length > 0, true);
+    t.equal(list && list.length > 0, true);
+    console.log(list);
   });
 })
