@@ -8,6 +8,27 @@ bash command `ls` in pure javascript
 $ npm install -g bash-ls
 ```
 
+### Command Line
+
+Run on Terminal
+
+```bash
+$ ls .
+```
+
+Output:
+
+```js
+[
+    "bin.js",
+    "index.js",
+    "node_modules",
+    "package.json",
+    "README.md",
+    "test"
+]
+```
+
 ### API
 
 ```js
