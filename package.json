@@ -1,6 +1,6 @@
 {
   "name": "bash-ls",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "bash command `ls` in pure javascript",
   "main": "index.js",
   "bin": {

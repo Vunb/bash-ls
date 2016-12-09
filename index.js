@@ -6,7 +6,7 @@ var async = require('async');
 var isHarmony = require('harmony-required')(true);
 
 function ls(files, option, callback) {
-  if (!files) return dir(__dirname, option, callback);
+  if (!files) return dir('.', option, callback);
 
   if (type(files) == 'string')
     return dir(files, option, callback);
